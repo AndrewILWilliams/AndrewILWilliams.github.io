@@ -19,7 +19,6 @@ div.picture_left  { width: 241px; height: 178px; float: left; margin: 0 17px 17p
 
 /* This is a comment, by the way */
 
-a.news { color: gray }
 a.menu { color: gray; text-decoration:none; font-size:20px; padding: .4em; padding-top: .6em }
 a.menu:hover { color: black }
 a.pdf { color:blue; text-decoration:underline; padding-right:10px; }
@@ -71,6 +70,11 @@ img {
 a {
     text-decoration: underline;
     color:black;
+}
+
+news {
+    text-decoration: underline;
+    color:dark-gray;
 }
 
 strong {
