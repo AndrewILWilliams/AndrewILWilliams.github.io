@@ -1,0 +1,99 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    margin: 20px;
+    padding: 0;
+}
+#content { color: black; background: white; width: 810px; margin: 0 auto; text-align: left /* Hack for IE5 */ }
+
+figure{ display:table; padding-top:0px; margin-top:0px;}
+figcaption{ display:table-caption; caption-side:bottom; text-align:left; font-size:12px;}
+
+span.paper_title{ font-style:italic; }
+span.journal {font-style:normal; }
+
+div.bar {width:810px; height:2px; background:black}
+div.picture_left  { width: 241px; height: 178px; float: left; margin: 0 17px 17px 17px }
+
+/* This is a comment, by the way */
+
+a.menu { color: gray; text-decoration:none; font-size:20px; padding: .4em; padding-top: .6em }
+a.menu:hover { color: black }
+a.pdf { color:blue; text-decoration:underline; padding-right:10px; }
+a.link { color:blue; text-decoration:underline; padding-right:2px;}
+
+p { line-height:21px; }
+p.publication { margin-left:1em; margin-top:0.25em; }
+p.pubs_year { margin-top:2em; margin-bottom:0em; font-weight:bold; }
+
+ul {text-align:center; font-weight:100; }
+li { display:inline; color:black; font-style:normal; }
+
+
+h1 {
+    color: #ffc;
+    background-color: #900;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5em;
+    border-bottom-color: #c00;
+}
+
+h2 {
+    color: white;
+    background-color: #090;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2px;
+    padding-left: 14px;
+}
+
+h3 {
+    color: #999;
+    font-size: 1.25em;
+}
+
+img {
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+}
+
+a {
+    text-decoration: underline;
+    color:black;
+}
+
+strong {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+table {
+    background-color: #ccc;
+}
+
+.alignleft {
+  float: left;
+  width:33.33333%;
+  text-align:left;
+}
+.aligncenter {
+  float: left;
+  width:33.33333%;
+  text-align:center;
+}
+.alignright {
+ float: left;
+ width:33.33333%;
+ text-align:right;
+}
