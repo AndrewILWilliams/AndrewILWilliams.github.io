@@ -103,7 +103,6 @@ table {
  text-align:right;
 }
 .customaligncenter {
-  float: center;
-  width:50%;
-  text-align:center;
+  margin: auto;
+  width: 60%;
 }
