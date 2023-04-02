@@ -102,3 +102,8 @@ table {
  width:33.33333%;
  text-align:right;
 }
+.customaligncenter {
+  float: center;
+  width:50%;
+  text-align:center;
+}
