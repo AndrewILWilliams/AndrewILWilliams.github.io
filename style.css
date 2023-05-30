@@ -1,6 +1,6 @@
 body {
     font-family: arial, helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     color: black;
     background-color: white;
     margin: 20px;
@@ -9,7 +9,7 @@ body {
 #content { color: black; background: white; width: 810px; margin: 0 auto; text-align: left /* Hack for IE5 */ }
 
 figure{ display:table; padding-top:0px; margin-top:0px;}
-figcaption{ display:table-caption; caption-side:bottom; text-align:left; font-size:12px;}
+figcaption{ display:table-caption; caption-side:bottom; text-align:left; font-size:15px;}
 
 span.paper_title{ font-style:italic; }
 span.journal {font-style:normal; }
