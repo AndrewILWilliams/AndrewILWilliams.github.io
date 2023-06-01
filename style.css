@@ -29,7 +29,7 @@ p { line-height:21px; }
 p.publication { margin-left:1em; margin-top:0.25em; }
 p.pubs_year { margin-top:2em; margin-bottom:0em; font-weight:bold; }
 
-ul {text-align:right; font-weight:100; }
+ul {text-align:right; font-weight:100; list-style-type: circle;}
 li { display:inline; color:black; font-style:normal; }
 
 
