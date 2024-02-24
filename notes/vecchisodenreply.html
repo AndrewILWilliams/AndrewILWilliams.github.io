@@ -37,10 +37,38 @@
   
 <p>VS07 not only popularized the idea of tropical circulation weakening under warming, but also proposed a mechanism for this which has remained lodged in the minds of climate scientists for decades since. To explain the weakening of tropical overturning circulations, they appeal to an argument first made by Betts (1998) and later popularized by Held and Soden (2006). In short, the argument says that because convection transports moisture from the boundary layer to the free-troposphere, where it condenses as precipitation, we can (in the global-mean) write:</p>	
 
-$$P=M_{c}q_{BL}.$$
+$$P=M_{c} \, q_{BL}.             (1)$$
+
+<p>Where $q_{BL}$ is the boundary layer specific humidity, $P$ is the surface precipitation rate and $M_{c}$ is the convective mass flux at cloud-base (the interface between the boundary layer, where moisture is sourced, and the free-troposphere where it condenses as precipitation). Now, under global warming we find that boundary layer saturation specific humidity ($q_{BL}$) increases rapidly (~6-7 %/K) and that the precipitation rate ($P$) increases much more slowly (~2-3%/K). The reason for this mismatch is because global-mean precipitation is constrained by the atmospheric energy budget, whereas boundary layer specific humidity just increases following the Clausius-Clapeyron relation. Now, if Eq. (1) is to hold while $P$ is increasing much more slowly than $q_{BL}$, it requires that the convective mass transport between the boundary layer and the free-troposphere must decrease at ~5%/K. 
+</p>
+
+<p>This weakening of cloud-base Mc is what VS07 argues to be the driver of a weakening tropical circulation under warming. As evidence for this claim, they plot changes in the inferred $M_{c}$, calculated by plugging global-mean $P$ and $q_{BL}$ into Eq. (1), against changes in the 500hPa vertical pressure velocity ($\omega_{500}$) integrated over ascending regions ($\omega^{+}_{500}$). This is shown in Fig. 4a of their paper, reproduced below.</p>
+
+<p>At first glance, this seems quite promising! Indeed, VS07 themselves conclude that "...this further supports the basic premise that the slower increase of precipitation relative to water vapor should lead to a weakening of the circulation." However, one of the points of this brief note is to highlight a key flaw in this figure. </p>
+
+<p>To see this, notice that the units on the x- and y-axis are simply percentages. This is because VS07 do not normalize these changes by the different amounts of temperature change across models. This approach neglects the fact that global-mean temperature changes may independently affect both $\omega^{+}_{500}$ and $M_{c}$, and changes in these quantities need not be linked. For example, a rising tropopause under global warming is expected to cause an increase in the ‘gross moist stability' of the tropics, which (all else equal) will cause a weakening of tropical overturning circulations. Additionally, changes in precipitation and water vapor are both robustly linked to global-mean temperature. 
+</p>
+
+
+<p>A simple way to understand Fig. 4a of VS07 is to imagine two quantities ($X$ and $Y$), both of which scale in some way with global-mean temperature change such that $\Delta X\sim\alpha\Delta T$ and $\Delta Y\sim\beta\Delta T$. In essence what VS07 have plotted in their Fig. 4a is $\Delta X\sim\alpha\Delta T$ and $\Delta Y\sim\beta\Delta T$, for various values of $\Delta T$. In this case you are <i>guaranteed</i> to get a correlation, with slope $=\beta/\alpha$. Indeed, a strong correlation would be expected between any two variables which scale with changes in global-mean temperature (e.g., tropical circulation strength strength and Arctic sea-ice extent). Clearly, this would not suggest a physical link between Arctic sea-ice extent changes and changes in the strength of the tropical overturning circulation.
+</p>
+
+<p>
+In climate science, it is common knowledge (nowadays) that coupled models have a variety of different transient and equilibrium climate sensitivities and thus warm differently over a given time interval when subject to identical forcing. As a result, it has become standard practice to consider fractional changes in a quantity of interest <i>per degree of global warming</i> (or to consider changes at a certain global warming level). This is done <i>precisely</i> to avoid the error which has occurred in Fig. 4a of VS07. 
+</p>
+
+<p>
+So, what happens if we (re-)calculate Fig. 4a from VS07, but now we correctly normalize each model by its warming rate (to account for the confounding impacts of differing ECS and TCR on the correlation)? As it happens, this was already done for us by <a href="https://www.nature.com/articles/s41612-019-0066-8" target="_self">Su et al. (2019)</a>. The resulting figure, reproduced below, shows that while a strong correlation between these variables might exist when calculating fractional changes per decade (right panel), in a similar manner to VS07, this correlation disappears entirely when one correctly normalizes by the modeled warming rates over this period (red markers in the left panel). 
+</p>
+
+<p>Why didn’t this result cause a stir? I think it is mostly because this figure from Su et al. (2019) only appears in the Supplemental Information, and isn’t really talked about much in the paper itself. Nevertheless, I myself found this to be quite an important finding, which is why I’m writing this note! 
+</p>
+
+<p>There are a number of different issues with the VS07 argument. For example, does '$P=M_{c} \, q_{BL}$' actually hold? Previous studies have suggested that it does not (Schneider et al., 2010; Jeevanjee, 2023) and we are currently about to submit a paper which tests this scaling in cloud-resolving models (spoiler: doesn’t work there either). It is thus not a good idea to use 'P=Mq' to reason about changes in convective mass flux with warming. However, I want to focus on something else here...
+</p>
 	
 <figure>
-  <img src="FiguresForNotes/Schneider2019Fig1.jpg" style="" width="750"  alt="Schneider2019Fig1.jpg"  >
+  <img src="FiguresForNotes/" style="" width="750"  alt="Schneider2019Fig1.jpg"  >
   <figcaption > Figure 1 from Schneider et al. (2019), which depicts the mechanisms which maintain stratocumulus decks in the current climate and lead to their demise in climates with much high greenhouse gas concentrations.   </figcaption>
 </figure>
 	
