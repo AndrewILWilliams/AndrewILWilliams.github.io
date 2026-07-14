@@ -12,6 +12,10 @@
     /* reserve the scrollbar so opening the menu doesn't shift the centered layout left */
     html { overflow-y: scroll; }
 
+    /* lay the header row out so the big name baseline-aligns with home/menu */
+    #content ul { display: flex; align-items: baseline; }
+    #content ul li:first-child { margin-right: auto; }  /* push the name to the left */
+
     li.dropdown { position: relative; display: inline-block; }
     li.dropdown summary {
       list-style: none; cursor: pointer;
@@ -34,7 +38,7 @@
 <body><div id="content">
 
    <ul>
-      <li><span  style="font-size:30px;float:left;" > Andrew I.L. Williams </span></li>
+      <li><span  style="font-size:30px;" > Andrew I.L. Williams </span></li>
       <li><a class="menu" href="index.html" target="_self">home</a></li>
       <li class="dropdown">
         <details>
