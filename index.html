@@ -23,8 +23,13 @@
     }
     li.dropdown summary::-webkit-details-marker { display: none; }
     li.dropdown summary:hover { color: black; }
-    li.dropdown summary::after              { content: " \25BE"; }   /* menu closed */
-    li.dropdown details[open] summary::after { content: " \25B4"; }  /* menu open   */
+    li.dropdown summary::after {
+	  content: '\25BE';
+	  display: inline-block;            /* needed for transform to apply */
+	  transition: transform 0.2s ease;  /* optional: animates the flip */
+	  margin-left: .15em;
+	}
+	li.dropdown details[open] summary::after { transform: rotate(180deg); }
     li.dropdown details[open] summary       { color: black; }
     li.dropdown .drop {
       position: absolute; right: 0; top: 100%;
