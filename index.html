@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-
 <html>
 <base target="_blank">
-
 <head>
   <title>Andrew Williams' Homepage </title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- dropdown menu styles (only new addition to the <head>) -->
+    <!-- dropdown menu styles (only new addition to the <head>) -->
   <style>
+  body { font-family: arial, helvetica, sans-serif; font-size:16px; color:black; background:white; margin:20px; line-height:1.5em; }
+  #content { color:black; background:white; width:810px; margin:0 auto; text-align:left; }
+  span.paper_title{ font-style:italic; }
+  div.bar { width:810px; height:2px; background:black; }
+  a.menu { color:gray; text-decoration:none; font-size:20px; padding:.4em; padding-top:.6em; }
+  a.menu:hover { color:black; }
+  p { line-height:21px; }
+  ul { text-align:right; font-weight:100; list-style-type:circle; }
+  li { display:inline; color:black; font-style:normal; }
+  img { border-style:none; }
+  a { text-decoration:underline; color:black; }
+
     /* reserve the scrollbar so opening the menu doesn't shift the centered layout left */
     html { overflow-y: scroll; }
-
     /* lay the header row out so the big name baseline-aligns with home/menu */
     #content ul { display: flex; align-items: baseline; margin: 0; padding: 0; }
-    #content ul li:first-child { margin-right: auto; margin-left: 10px; } /* Moving my name to the left a bit */
-
+    #content ul li:first-child { margin-right: auto; margin-left: 10px; text-align: left; } /* left-align name+subtitle; nudge right a bit */
+    /* subtitle under the name */
+    .subtitle { color: gray; font-size: 16px; }
     li.dropdown { position: relative; display: inline-block; }
     li.dropdown summary {
       list-style: none; cursor: pointer;
@@ -39,19 +47,18 @@
     li.dropdown .drop a.menu { display: block; padding: .3em .2em; }
   </style>
 </head>
-
 <body><div id="content">
-
    <ul>
-      <li><span  style="font-size:25px;" > Andrew I.L. Williams </span></li>
+      <li><span  style="font-size:25px;" > Andrew I.L. Williams </span><br>
+          <span class="subtitle">Climate &amp; atmospheric physics &middot; Scripps Institution of Oceanography</span></li>
       <!--
 	   <li><a class="menu" href="index.html" target="_self" style="font-size:25px;">home</a></li>
 	  -->
+      <li><a class="menu" href="publications.html" target="_self">publications</a></li>
       <li class="dropdown">
         <details>
           <summary>menu</summary>
           <div class="drop">
-            <a class="menu" href="publications.html" target="_self">publications</a>
             <a class="menu" href="outreach_deia.html" target="_self">outreach &amp; deia</a>
             <a class="menu" href="docs/resume_AndrewWilliams.pdf"  onclick="window.open">cv</a>
           </div>
@@ -60,139 +67,82 @@
     </ul>
 	<br>
    <div class="bar" > </div>
-	
+
 <!--
   <div style="width:300; height:200; float:left; margin: 20px 20px 50px 0px"> <! big margin on bottom, none on left >
     <img src="images/my_face.png" width="300" alt="Profile pic"  >
   </div>
 -->
-
    <!--
    <div style="width:195; height:300; float:left; margin: 20px 20px 50px 0px"> <! big margin on bottom, none on left >
     <img src="images/holy_cross_aug25.jpg" width="195" alt="Profile pic"  >
    </div>
    -->
-
 	<div style="width:250; height:250; float:left; margin: 20px 20px 20px 0px"> <! big margin on bottom, none on left >
     <img src="images/holy_cross_aug25_cropped_v2.jpg" width="240" alt="Profile pic"  >
    </div>
-
     <p>
     I am a postdoctoral researcher at the Scripps Institution of Oceanography. Prior to this, I was a research fellow at Princeton University and NOAA's Geophysical Fluid Dynamics Laboratory. I received a Ph.D. in Physics from the University of Oxford in 2023.
     </p>
-
 	<p>
     The goal of my research is to link emergent properties of the climate system to basic physics, which I achieve using both pencil-and-paper theory and a hierarchy of numerical models of the atmosphere and ocean. I am generally interested in problems related to tropical convection, large-scale atmosphere-ocean circulation, climate sensitivity, and the hydrological cycle.
     </p>
-
 	<p>
     I am actively involved in climate science outreach through <a style="color:gray" href="https://www.climateupclose.org/">Climate Up Close</a> and <a style="color:gray" href="https://wclivestream.com/">The Weather & Climate Livestream</a>.
     </p>
-
     <p>
       My email is: andrewwilliams [at] ucsd [dot] edu
     </p>
-
 	<p>
       In July 2027 I'll be joining Columbia University as an Assistant Professor in the Department of Earth and Environmental Sciences and the Ocean & Climate Physics Division of the Lamont-Doherty Earth Observatory.
     </p>
-
   <div style="clear:both">
-
    <div class="bar" > </div>
-
    <p>
      <br>
      <span  style="font-size:20px;" > News <br>
    </p>
-
    <p> <span style="font-weight:bold;"> June 2026 </span> &nbsp <span  style="color:gray" > Together with a number of other students, postdocs and faculty, I organized the 2nd Weather & Climate Livestream. We had 140 speakers present their work to the public for 50 hours straight, while graduate student <a style="color:gray" href="https://eesc.columbia.edu/content/syl-foisy">Syl Foisy</a> walked 250 miles from Central Park to Capitol Hill to deliver letters to Congress in support of science funding. You can watch the Livestream  <a style="color:gray" href="https://www.youtube.com/watch?v=v64jhYUkL8g&list=PLDDEU7mKb6z1MzcwHWtiCsSnVpBgZ2gOl&index=3">here</a>, and a press conference with Congressional Representatives <a style="color:gray" href="https://www.youtube.com/watch?v=d-Ovq9bB6to">here</a>. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> April 2026 </span> &nbsp <span  style="color:gray" > Big news! In July 2027, I'll be joining Columbia University as an Assistant Professor in the Department of Earth and Environmental Sciences and the Lamont-Doherty Earth Observatory. Thanks to everyone who has supported me on my journey so far :) </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> March 2026 </span> &nbsp <span  style="color:gray" > I was <a style="color:gray" href="https://scripps.ucsd.edu/postdocs/program/program-awardees">awarded</a> a two-year postdoctoral fellowship at the Scripps Institution of Oceanography, hosted by Duncan Watson-Parris and Nick Lutsko. Woop! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> March 2026 </span> &nbsp <span  style="color:gray" > I gave invited talks at Colorado State University and the University of Chicago. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> February 2026 </span> &nbsp <span  style="color:gray" > I gave an invited talk at the Lamont-Doherty Earth Observatory. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> January 2026 </span> &nbsp <span  style="color:gray" > My <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005405">paper</a> <span style="font-style:italic;">"Bridging Clarity and Accuracy: A Simple Spectral Longwave Radiation Scheme for Idealized Climate Modeling"</span>, was just published in Journal of Advances in Modeling Earth Systems! This was my first sole-author paper, and a lot of fun to work on, hope you enjoy! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> January 2026 </span> &nbsp <span  style="color:gray" > My <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL118423">paper</a> <span style="font-style:italic;">"State-Dependence of Polar Amplification in an Idealized GCM"</span>, co-authored with Tim Merlis, was just published in Geophysical Research Letters. This was a fun one, hope you enjoy! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> December 2025 </span> &nbsp <span  style="color:gray" > My <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025GL117734">paper</a> <span style="font-style:italic;">"Sea-surface temperature patterns, radiative cooling, and hydrological sensitivity"</span>, co-authored with Nadir Jeevanjee, was just published in Geophysical Research Letters. Check it out! </span> &nbsp </p>
-
       <p> <span style="font-weight:bold;"> Nov 2025 </span> &nbsp <span  style="color:gray" > I spent a few days at Texas A&M University, talking with students and faculty about conducting climate dynamics research, and outreach, in these weird times. </span> &nbsp </p>
-
 	  <p> <span style="font-weight:bold;"> July 2025 </span> &nbsp <span  style="color:gray" > I was interviewed, alongside Aaron Match, on the Three Degrees podcast to discuss Climate Up Close, having recently completed an outreach tour in Nebraska <a style="color:gray" href="https://threedegreespodcast.substack.com/p/three-degrees-meet-the-scientists">[podcast]</a>. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> June 2025 </span> &nbsp <span  style="color:gray" > I spent a week in Nebraska performing climate science outreach with <a style="color:gray" href="https://www.climateupclose.org/">Climate Up Close</a>. <a style="color:gray" href="https://www.climateupclose.org/2025-tour-nebraska">[Itinerary]</a> <a style="color:gray" href="https://www.1011now.com/2025/06/28/it-has-start-with-science-climate-group-holds-data-driven-discussion-lincoln/">[News Coverage]</a> </span> &nbsp </p>
-
-
    <p> <span style="font-weight:bold;"> May 2025 </span> &nbsp <span  style="color:gray" > Together with a number of other students, postdocs and faculty, I organized the 100 hour-long <a style="color:gray" href="https://wclivestream.com/">Weather & Climate Livestream</a>! Huge thanks to the 200+ speakers who volunteered their time to draw attention to the importance of US weather & climate science. It was covered nicely in this <a style="color:gray" href="https://www.nytimes.com/2025/05/30/climate/science-livestream-budget-cuts.html">New York Times article</a>. </span> &nbsp </p>
-
 	<p> <span style="font-weight:bold;"> April 2025 </span> &nbsp <span  style="color:gray" > I gave talks at Florida State University, EGU, and the ECS & Cloud Feedback Virtual Symposium. </span> &nbsp </p>
-
 	  <p> <span style="font-weight:bold;"> April 2025 </span> &nbsp <span  style="color:gray" > My <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024MS004695">paper</a> <span style="font-style:italic;">"A Robust Constraint on the Response of Convective Mass Fluxes to Warming
 "</span>, co-authored with Nadir Jeevanjee, was just published in Journal of Advances in Modeling Earth Systems. Yay! </span> &nbsp </p>
-
   <p> <span style="font-weight:bold;"> April 2025 </span> &nbsp <span  style="color:gray" > The <a style="color:gray" href="https://acp.copernicus.org/articles/25/4443/2025/">paper</a> <span style="font-style:italic;">"Surface temperature effects of recent reductions in shipping SO2 emissions are within internal variability"</span>, led by Duncan Watson-Parris, was published in Atmospheric Chemistry and Physics. </span> &nbsp </p>
-
   <p> <span style="font-weight:bold;"> April 2025 </span> &nbsp <span  style="color:gray" > The <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024GL112543">paper</a> <span style="font-style:italic;">"Circulation and Cloud Responses to Patterned SST Warming"</span>, led by Anna Mackie, was published in Geophysical Research Letters. </span> &nbsp </p>
-
   <p> <span style="font-weight:bold;"> February 2025 </span> &nbsp <span  style="color:gray" > I visited the University of Washington to give an invited talk. I met with a number of wonderful faculty and students—thanks for having me! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> September 2024 </span> &nbsp <span  style="color:gray" > I gave invited talks on convection and the response of tropical circulations to warming at The City College of New York and the CLIVAR TROPICS workshop in Hamburg.  </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> August 2024 </span> &nbsp <span  style="color:gray" > Our <a style="color:gray" href="https://gmd.copernicus.org/articles/17/1563/2024/">paper</a> on the effect of vertical grid spacing on the climate of a global storm-resolving model was published in Geoscientific Model Development. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> August 2024 </span> &nbsp <span  style="color:gray" > I spent a week in New Hampshire doing climate science outreach with <a style="color:gray" href="https://www.climateupclose.org/">Climate Up Close</a>. It was fantastic to connect with local New Hampshire residents and to help them grapple with the science and implications of climate change. For a glimpse into one of our events, take a look at this excellent <a style="color:gray" href="https://www.nhpr.org/nh-news/2024-08-02/got-questions-about-global-warming-these-climate-scientists-are-touring-nh-with-answers">NHPR article</a>. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> June 2024 </span> &nbsp <span  style="color:gray" > I presented my work on the response of convective mass fluxes to warming at the <a style="color:gray" href="https://sites.bc.edu/cfmip2024/">CFMIP conference</a> (which I helped to organize) and at AOFD in Burlington. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> Feb 2024 </span> &nbsp <span  style="color:gray" > Excited to share that the <a style="color:gray" href="https://gfmip.org/">GFMIP</a> protocol paper is now published in JAMES! This has been a long and herculean effort, spearheded by the brilliant <a style="color:gray" href="http://jonah.org/">Jonah Bloch-Johnson</a> and backed up by a number of exceptional scientists from around the world. Looking forward to seeing this initiative bear fruit, so read the paper <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2023MS003700/">here</a> and considering submitting simulations with your model! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> Nov 2023 </span> &nbsp <span  style="color:gray" > Together with <a style="color:gray" href="https://veethescientist.com/">Veeshan Narinesingh</a> and <a style="color:gray" href="https://xia-li.com/">Xia Li</a>, we gave guest lectures at the CUNY Graduate Center on atmospheric dynamics and heatwaves in a changing climate. It was great to interact with so many bright and eager PhD students! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> Oct 2023 </span> &nbsp <span  style="color:gray" > It was a busy week, as I gave departmental seminars at NYU's Courant Institute (in person) and the University of East Anglia (virtual); I spoke about the role of deep convection in governing the pattern effect and the tropical lapse rate. Many thanks to the organizers for inviting me! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> Sept 2023 </span> &nbsp <span  style="color:gray" > I joined the Steering Committee for the <a style="color:gray" href="https://sites.google.com/tamu.edu/ecs-symposium/home">ECS & cloud feedback virtual symposia</a>. I've learned so much from these sessions and am psyched to help organize future events. </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> July 2023 </span> &nbsp <span  style="color:gray" > I won an <a style="color:gray" href="https://www.cfmip.org/about/award">outstanding early career presentation award</a> at the CFMIP-GASS meeting in Paris! Thanks to Sandrine/Florent and all the local organizers for a fantastic conference! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> July 2023 </span> &nbsp <span  style="color:gray" > I defended my PhD thesis! Thanks to Tim Woollings and Bjorn Samset for taking the time to discuss and provide stimulating feedback on my work. </span> &nbsp </p>
-
-
    <p> <span style="font-weight:bold;"> March 2023 </span> &nbsp <span  style="color:gray" > I gave a <a style="color:gray" href="https://www.youtube.com/watch?v=FwBp0PAVYK8&ab_channel=dessler2">talk</a> at the 23rd ECS & cloud feedbacks virtual symposium, alongside great talks by Margaret Duffy and Paulo Ceppi! Thanks to the organizers for putting together these sessions. :) </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> March 2023 </span> &nbsp <span  style="color:gray" > My "circus tent" paper was chosen as an <a style="color:gray" href="https://eos.org/editor-highlights/non-linear-climate-response-to-tropical-sea-surface-temperatures">Editor's highlight</a>! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> March 2023 </span> &nbsp <span  style="color:gray" > My <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2022GL101499">paper</a> on <span class="paper_title">"Circus Tents, Convective Thresholds, and the Non-Linear Climate Response to Tropical SSTs"</span>, co-authored with Nadir Jeevanjee and Jonah Bloch-Johnson, was just published in Geophysical Research Letters!</span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> Dec. 2022 </span> &nbsp <span  style="color:gray" > I took the train from New York to Chicago for #AGU22! It was a rewarding week, with lots of great posters and talks around. I gave a talk on Friday afternoon on my <a style="color:gray" href="https://www.authorea.com/doi/full/10.1002/essoar.10512543.1" >"circus tent"</a> paper too! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> Dec. 2022 </span> &nbsp <span  style="color:gray" > I spent two weeks on the East Coast visiting different institutions pre-AGU, thanks to my hosts at Yale, Boston College, Harvard and GFDL for the great experience! </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> Aug. 2022 </span> &nbsp <span  style="color:gray" > I was <a style="color:gray" href="https://www.physics.ox.ac.uk/news/meetandrew-williams" >interviewed</a> for Oxford's <span style="font-style:italic;">"Meet the Scientist"</span> series! Enjoy reading me rant about climate, cycling and my cat :) </span> &nbsp </p>
-
    <p> <span style="font-weight:bold;"> July 2022 </span> &nbsp <span  style="color:gray" > My paper on aerosol effective radiative forcing was just <a style="color:gray" href="https://www.nature.com/articles/s41558-022-01415-4">published in Nature Climate Change!</a> Read a summary/explainer <a style="color:gray" href="https://www.physics.ox.ac.uk/news/understanding-absorbing-aerosol">here</a> :) </span> &nbsp
-
    <p> <span style="font-weight:bold;"> July 2022 </span> &nbsp <span  style="color:gray" > I won an <a style="color:gray" href="https://www.egu.eu/awards-medals/ospp-award/">Outstanding Student Presentation award</a> for my EGU conference presentation! :sunglasses: </span> &nbsp
-
    <p> <span style="font-weight:bold;"> May 2022  </span> &nbsp <span  style="color:gray" > I attended the EGU22 conference (in-person!) and gave an <a style="color:gray" href="https://meetingorganizer.copernicus.org/EGU22/session/44036">invited talk</a> on my PhD work. :) </span> &nbsp
-
    <p> <span style="font-weight:bold;"> Apr. 2022 </span> &nbsp <span  style="color:gray" > Our new <a style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021MS002951?af=R">paper</a> was just published in JAMES! In it, we introduce a simple framework which links clouds and circulation by thinking about how they relate to the atmospheric water and energy budgets. </span> &nbsp
-
    <p> <span style="font-weight:bold;">	Feb. 2022 </span> &nbsp <span  style="color:gray" > I received an <a style="color:gray" href="https://www.agu.org/Learn-and-Develop/Learn/Student-Competitions/OSPA/OSPA-Winners?m-search-result=OSPA">Outstanding Student Presentation award</a> for my AGU conference presentation! :) </span> &nbsp
-
    <p> <span style="font-weight:bold;"> Dec. 2021 </span> &nbsp <span  style="color:gray" > I attended my first AGU conference (virtually...)! While "there", I presented one poster on my PhD work, and gave a talk on my extreme precipitation paper with Paul O'Gorman <news style="color:gray" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GL096531">(now published in GRL)</news>. </span> &nbsp
-
-
    <p> <span style="font-weight:bold;"> Dec. 2021 </span> &nbsp <span  style="color:gray" > I contributed to a <a style="color:gray" href="https://gmd.copernicus.org/articles/14/7659/2021/gmd-14-7659-2021.html" >new paper in GMD</a>, led by the inimitable <a style="color:gray" href="https://duncanwp.github.io/">Duncan Watson-Parris</a>. In it, we introduce a scalable, open-source framework for performing emulation and calibration of complex climate datasets - 'ESEm'! </span> &nbsp
-
    <p> <span style="font-weight:bold;"> Oct. 2019 </span> &nbsp <span  style="color:gray" > I started my PhD! =D </span> &nbsp
-
-
 </div></body>
-
 </html>
