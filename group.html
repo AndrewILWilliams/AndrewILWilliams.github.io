@@ -14,7 +14,8 @@
     /* Member grid: 3 across, caption underneath each photo */
     .group-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);   /* <- "3 across". See note below to auto-fill instead */
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      /* grid-template-columns: repeat(3, 1fr); */  /* <- "3 across" alternative.  */ 
       gap: 30px;
       margin-top: 8px;
     }
@@ -85,14 +86,14 @@
       </div>
 
       <div class="member">
-         <img src="images/Portrait_placeholder.jpg" alt="Placeholder">
+         <img src="images/Portrait_placeholder.png" alt="Placeholder">
          <p class="name">This could be you!</p>
          <p class="role">Group member</p>
          <p class="bio">This could be you! Check out the opportunities page for any currently available positions! </p>
       </div>
 
       <div class="member">
-         <img src="images/Portrait_placeholder.jpg" alt="Placeholder">
+         <img src="images/Portrait_placeholder.png" alt="Placeholder">
          <p class="name">This could be you!</p>
          <p class="role">Group member</p>
          <p class="bio">This could be you! Check out the opportunities page for any currently available positions! </p>
