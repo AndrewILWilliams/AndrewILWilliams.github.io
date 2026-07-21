@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<base target="_blank">
+<head>
+  <title>Research Group</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ============================================================= -->
+  <!--  Group-page-only styling. Everything else comes from style.css -->
+  <!-- ============================================================= -->
+  <style>
+    /* PI intro row: reuses your existing float pattern, nothing new needed */
+
+    /* Member grid: 3 across, caption underneath each photo */
+    .group-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);   /* <- "3 across". See note below to auto-fill instead */
+      gap: 30px;
+      margin-top: 8px;
+    }
+    .member img {
+      width: 100%;
+      height: 230px;           /* uniform card height regardless of source photo size */
+      object-fit: cover;       /* crops to fill; delete these two lines to keep raw proportions */
+      display: block;
+    }
+    .member .name { font-weight: bold; margin: 9px 0 1px 0; }
+    .member .role { font-style: italic; color: gray; margin: 0 0 5px 0; font-size: 14px; }
+    .member p.bio { font-size: 14px; line-height: 19px; margin: 0; }
+  </style>
+</head>
+
+<body><div id="content">
+
+   <!-- ===== nav: identical to your other pages, with "group" added ===== -->
+   <ul>
+      <li>
+        <span style="font-size:30px;">Andrew I.L. Williams</span><br>
+      </li>
+      <li><a class="menu" href="index.html" target="_self">home</a></li>
+      <li><a class="menu" href="publications.html" target="_self">publications</a></li>
+      <li><a class="menu" href="group.html" target="_self">group</a></li>
+      <li class="dropdown">
+        <details>
+          <summary>menu</summary>
+          <div class="drop">
+            <a class="menu" href="outreach_deia.html" target="_self">outreach &amp; deia</a>
+            <a class="menu" href="docs/resume_AndrewWilliams.pdf" onclick="window.open">cv</a>
+          </div>
+        </details>
+      </li>
+   </ul>
+
+   <br>
+   <div class="bar"></div>
+   <br>
+
+   <p style="font-size:20px; color:black; text-align:center;">
+   Research Group
+   </p>
+
+   <!-- ===== PI row: photo left, bio right (your existing figure/float pattern) ===== -->
+   <div style="clear:both">
+   <figure style="float:left; width:220px; margin: 0 22px 8px 0;">
+   <img src="images/andrew_headshot.jpg" width="200" alt="Andrew Williams">
+   </figure>
+
+   <p>
+   <b>Andrew Williams</b> is an Assistant Professor of Climate Science at Columbia University.
+   His group studies tropical convection, radiative transfer, and the large-scale circulation of
+   the atmosphere and ocean, using theory and a hierarchy of numerical models. He likes to hang
+   out with his cat. &nbsp;<a href="docs/resume_AndrewWilliams.pdf">[CV]</a>
+   </p>
+   </div>
+
+   <div style="clear:both"><br><br></div>
+
+   <!-- ===== Members: 3-across grid, text below each photo ===== -->
+   <div class="group-grid">
+
+      <div class="member">
+         <img src="images/member1.jpg" alt="Name 1">
+         <!-- to link the name: <p class="name"><a href="https://...">Name 1</a></p> -->
+         <p class="name">Name 1</p>
+         <p class="role">PhD student</p>
+         <p class="bio">Name 1 did their undergrad at X, and enjoys Y.</p>
+      </div>
+
+      <div class="member">
+         <img src="images/member2.jpg" alt="Name 2">
+         <p class="name">Name 2</p>
+         <p class="role">PhD student</p>
+         <p class="bio">Name 2 did their undergrad at X, and enjoys Y.</p>
+      </div>
+
+      <div class="member">
+         <img src="images/member3.jpg" alt="Name 3">
+         <p class="name">Name 3</p>
+         <p class="role">PhD student</p>
+         <p class="bio">Name 3 did their undergrad at X, and enjoys Y.</p>
+      </div>
+
+   </div>
+
+   <br>
+
+</div></body></html>
